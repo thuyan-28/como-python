@@ -13,9 +13,9 @@ elif choice == "obdelnik":
     st.text(f"Obsah obdélníku je {obsah_obdelniku} a obvod obdélníku je {obvod_obdelniku}")
 elif choice == "krychle":
     strana_krychle = st.number_input("Zadejte stranu krychle v cm: ", min_value=1)
-    obsah_krychle = 6*strana_krychle*strana_krychle
+    plocha_krychle = 6*strana_krychle*strana_krychle
     objem_krychle = strana_krychle * strana_krychle * strana_krychle
-    st.text(f"Obsah krychle je {obsah_krychle} a objem krychle je {objem_krychle}")
+    st.text(f"Obsah krychle je {plocha_krychle} a objem krychle je {objem_krychle}")
 else:
     strana_a = st.number_input("Zadejte první stranu kvádru v cm: ", min_value=1)
     strana_b = st.number_input("Zadejte druhou stranu kvádru v cm: ", min_value=1)
