@@ -1,9 +1,4 @@
 import streamlit as st
-import pandas as pd
-import plotly.express as px 
-import requests
-import json
-import datetime
 
 st.header ("Moje aplikace")
 choice = st.selectbox("Co chcete počítat?", ["ctverec", "obdelnik", "kvadr"])
