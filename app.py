@@ -22,6 +22,6 @@ else:
     strana_c = st.number_input("Zadejte třetí stranu v cm: ", min_value=1)
     objem_kvadru = strana_a * strana_b * strana_c
     plocha_kvadru = 2*(strana_a * strana_b + strana_a * strana_c + strana_b * strana_c)
-    st.text(f"Objem kvádru je {objem_kvadru}, plocha kvádru je {plocha_kvadru} součet hran je {4*(strana_a + strana_b + strana_c) }")
+    st.text(f"Objem kvádru je {objem_kvadru}, plocha kvádru je {plocha_kvadru}")
 
   
