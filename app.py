@@ -5,7 +5,7 @@ import requests
 import json
 import datetime
 
-st.header ("Vítej v programu")
+st.header ("Moje aplikace")
 choice = st.selectbox("Co chcete počítat?", ["ctverec", "obdelnik", "kvadr"])
 if choice == "ctverec":
     strana_ctverce = st.number_input("Zadej stranu čtverce v cm: ", min_value=1)
@@ -24,3 +24,4 @@ else:
     plocha_kvadru = 2*(strana_a * strana_b + strana_a * strana_c + strana_b * strana_c)
     st.text(f"Objem kvádru je {objem_kvadru}, plocha kvádru je {plocha_kvadru} součet hran je {4*(strana_a + strana_b + strana_c) }")
 
+  
