@@ -56,31 +56,31 @@ if button_vysledek:
     col3.metric(label = "Tvůj BMI je: ", value = bmi_vysledek)
     col4.metric(label = "Tvoje ideální hmotnost: ", value = f"{ibw} kg")
 
-#st.subheader("Příjem energie pro hubnutí")
-mirny_ubytek_hmotnosti = round(tdee*0.9)
-ztrata_vahy = round(tdee*0.8)
-extremni_ztrata_hmotnosti = round(tdee*0.61)
-hubnuti = ["Mírný úbytek hmotnosti", "Ztráta váhy", "Extrémní ztráta hmotnosti"]
-kalorie_hubnuti = [mirny_ubytek_hmotnosti, ztrata_vahy, extremni_ztrata_hmotnosti]
-df = pd.DataFrame(zip(hubnuti, kalorie_hubnuti))
-df.columns = ["úroveň hubnutí", "kcal/den"]
+    #st.subheader("Příjem energie pro hubnutí")
+    mirny_ubytek_hmotnosti = round(tdee*0.9)
+    ztrata_vahy = round(tdee*0.8)
+    extremni_ztrata_hmotnosti = round(tdee*0.61)
+    hubnuti = ["Mírný úbytek hmotnosti", "Ztráta váhy", "Extrémní ztráta hmotnosti"]
+    kalorie_hubnuti = [mirny_ubytek_hmotnosti, ztrata_vahy, extremni_ztrata_hmotnosti]
+    df = pd.DataFrame(zip(hubnuti, kalorie_hubnuti))
+    df.columns = ["úroveň hubnutí", "kcal/den"]
 
-#st.subheader("Příjem energie pro přibírání na váze")
-mirny_prirustek_hmotnosti = round(tdee*1.1)
-pribyvani_na_vaze = round(tdee*1.2)
-extremni_narust_hmotnosti = round(tdee*1.39)
-pribirani = ["Mírný přírůstek hmotnosti", "Přibývání na váze", "Extrémní nárůst hmotnosti"]
-kalorie_pribirani = [mirny_prirustek_hmotnosti, pribyvani_na_vaze, extremni_narust_hmotnosti]
-df_1 = pd.DataFrame(zip(pribirani, kalorie_pribirani))
-df_1.columns = ["úroveň přibírání", "kcal/den"]
+    #st.subheader("Příjem energie pro přibírání na váze")
+    mirny_prirustek_hmotnosti = round(tdee*1.1)
+    pribyvani_na_vaze = round(tdee*1.2)
+    extremni_narust_hmotnosti = round(tdee*1.39)
+    pribirani = ["Mírný přírůstek hmotnosti", "Přibývání na váze", "Extrémní nárůst hmotnosti"]
+    kalorie_pribirani = [mirny_prirustek_hmotnosti, pribyvani_na_vaze, extremni_narust_hmotnosti]
+    df_1 = pd.DataFrame(zip(pribirani, kalorie_pribirani))
+    df_1.columns = ["úroveň přibírání", "kcal/den"]
 
-col5, col6 = st.columns(2)
-with col5:
-    st.subheader("Příjem energie pro hubnutí")
-    df
-with col6:
-    st.subheader("Příjem energie pro příbírání")
-    df_1
+    col5, col6 = st.columns(2)
+    with col5:
+        st.subheader("Příjem energie pro hubnutí")
+        df
+    with col6:
+        st.subheader("Příjem energie pro příbírání")
+        df_1
 
 
 
