@@ -6,7 +6,7 @@ from PIL import Image
 st.header("Vítej v programu na výpočet BMI, BMR, TDEE")
 pohlavi = st.selectbox("Vyber si pohlaví: ", ("muž", "žena"))
 vek = st.slider("Vyber si svůj věk: ", 15, 120, 25)
-vyska = st.number_input("Napiš svojí výšku v cm: ",value=150, key = "bmr")
+vyska = st.number_input("Napiš svojí výšku v cm: ",value=152, min_value=152,  key = "bmr")
 vaha = st.number_input("Napiš svojí hmotnost v kg: ", value = 50, key = "bmr_1")
 
 activity_factor = st.selectbox ("Vyber si svojí faktor aktivity: ", ["sedavý: málo nebo žádné cvičení", "lehce aktivní: cvičit 1-3x/týdne", "mírně aktivní: cvičit 4-5x/týdne", "velmi aktivní: denní nebo intezivní cvičení", "super aktivní: každodenní cvičení nebo fyzická práce"])
