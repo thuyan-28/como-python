@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 from PIL import Image
 
-st.header("Vítej v programu na výpočet BMI, BMR, TDEE")
+st.header("Vítej v programu na výpočet BMI, BMR, TDEE, IBW")
 pohlavi = st.selectbox("Vyber si pohlaví: ", ("muž", "žena"))
 vek = st.slider("Vyber si svůj věk: ", 15, 120, 25)
 vyska = st.number_input("Napiš svojí výšku v cm: ",value=152, min_value=152,  key = "bmr")
